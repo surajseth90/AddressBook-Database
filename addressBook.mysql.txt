@@ -15,4 +15,3 @@
     ->      PRIMARY KEY (phone_number)
     ->      );
  DESC address_book_table;
-
