@@ -38,3 +38,6 @@ SELECT * FROM address_book_table WHERE state ='MadhyaPradesh';
 #UC7
 SELECT COUNT(*) FROM address_book_table WHERE city ='Datia';
 SELECT COUNT(*) FROM address_book_table WHERE state ='MadhyaPradesh';
+
+#UC8
+SELECT first_name FROM  address_book_table ORDER BY city= 'Datia';
