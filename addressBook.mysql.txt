@@ -29,3 +29,8 @@ UPDATE address_book_table SET phone_number = '9876543210' WHERE first_name = 'Bi
 
 DELETE FROM address_book_table
 WHERE first_name = 'Bill';
+
+#UC6
+
+SELECT * FROM address_book_table WHERE city ='Datia';
+SELECT * FROM address_book_table WHERE state ='MadhyaPradesh';
