@@ -1,0 +1,17 @@
+#UC1
+ CREATE DATABASE address_book_service;
+ USE address_book_service;
+
+#UC2
+  CREATE TABLE address_book_table
+    ->      ( first_name  VARCHAR(50) NOT NULL,
+    ->      last_name  VARCHAR(50) NOT NULL,
+    ->      address VARCHAR(300) NOT NULL,
+    ->      city VARCHAR(100) NOT NULL,
+    ->      state VARCHAR(100) NOT NULL,
+    ->      zip INT(6) NOT NULL,
+    ->      phone_number     INT(12) NOT NULL,
+    ->      email  VARCHAR(100) NOT NULL,
+    ->      PRIMARY KEY (phone_number)
+    ->      );
+ DESC address_book_table;
