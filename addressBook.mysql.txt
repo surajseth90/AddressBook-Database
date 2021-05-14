@@ -15,3 +15,8 @@
     ->      PRIMARY KEY (phone_number)
     ->      );
  DESC address_book_table;
+
+#UC3
+ INSERT INTO address_book_table (first_name ,last_name ,address ,city,state ,zip ,phone_number , email) VALUES
+    -> ('Bill' ,'Gates' ,'microsoft' , 'newyork' , 'california' , 123456 ,'1234567890'  ,'abc@gmail.com'),
+    -> ('Suraj' ,'Gupta' , 'badoni' ,'Datia' ,'MadhyaPradesh',475686,'8770393407','surajseth90@gmail.com');
