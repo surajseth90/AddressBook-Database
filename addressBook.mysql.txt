@@ -24,3 +24,8 @@
 #UC4
 
 UPDATE address_book_table SET phone_number = '9876543210' WHERE first_name = 'Bill';
+
+#UC5
+
+DELETE FROM address_book_table
+WHERE first_name = 'Bill';
