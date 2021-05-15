@@ -57,4 +57,31 @@ INSERT INTO address_book_table (first_name ,last_name ,type,address ,city,state 
      ('Bill' ,'Gates' ,'Friend','microsoft' , 'newyork' , 'california' , 123456 ,'1234567890'  ,'abc@gmail.com'),
      ('Sonali' ,'Gupta' , 'Family','betul' ,'betul' ,'MadhyaPradesh',460001,'4567891502','sonag@gmail.com');
 
+#UC13
+CREATE TABLE address_book
+    -> (id INT NOT NULL AUTO_INCREMENT,
+    -> first_name VARCHAR(50) NOT NULL,
+    -> last_name VARCHAR(50) NOT NULL,
+    -> PRIMARY KEY(id) );
 
+ CREATE TABLE address
+    -> (id INT NOT NULL PRIMARY KEY,
+    -> address VARCHAR(200) NOT NULL,
+    -> city VARCHAR(100) NOT NULL,
+    -> state VARCHAR(100) NOT NULL,
+    -> zip INT NOT NULL,
+    -> FOREIGN KEY(id) REFERENCES address_book(id)
+    -> );
+
+ CREATE TABLE contact(
+    ->  id INT NOT NULL PRIMARY KEY,
+    ->  phone_number VARCHAR(20) NOT NULL,
+    ->  email VARCHAR(50) NOT NULL,
+    -> FOREIGN KEY(id) REFERENCES address_book(id)
+    ->  );
+
+CREATE TABLE contact_type(
+    ->       id INT NOT NULL PRIMARY KEY,
+    ->       type VARCHAR(20) NOT NULL,
+    ->      FOREIGN KEY(id) REFERENCES address_book(id)
+    ->       );
