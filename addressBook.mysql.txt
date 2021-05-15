@@ -50,3 +50,11 @@ UPDATE address_book_table SET type="Family" WHERE first_name='suraj';
 #UC10
  SELECT COUNT(*) FROM address_book_table WHERE type = 'Family';
  SELECT COUNT(*),type FROM address_book_table GROUP BY type; 
+
+#UC11
+
+INSERT INTO address_book_table (first_name ,last_name ,type,address ,city,state ,zip ,phone_number , email) VALUES
+     ('Bill' ,'Gates' ,'Friend','microsoft' , 'newyork' , 'california' , 123456 ,'1234567890'  ,'abc@gmail.com'),
+     ('Sonali' ,'Gupta' , 'Family','betul' ,'betul' ,'MadhyaPradesh',460001,'4567891502','sonag@gmail.com');
+
+
