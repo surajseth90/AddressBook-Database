@@ -41,3 +41,8 @@ SELECT COUNT(*) FROM address_book_table WHERE state ='MadhyaPradesh';
 
 #UC8
 SELECT first_name FROM  address_book_table ORDER BY city= 'Datia';
+
+#UC9
+ ALTER TABLE address_book_table
+    -> ADD type VARCHAR(50) NOT NULL AFTER last_name;
+UPDATE address_book_table SET type="Family" WHERE first_name='suraj';
